@@ -27,8 +27,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
       
+    - name: Build dotnet 
+      run: dotnet build Raiffeisen.CSV/Raiffeisen.CSV.csproj -c Release /p:Version=${{ steps.gitversion.outputs.AssemblySemVer }} /p:AssemblyVersion=${{ steps.gitversion.outputs.AssemblySemVer }} /p:InformationalVersion=${{ steps.gitversion.outputs.InformationalVersion }} --no-restore
+      
     - name: Package nuget
-      run: dotnet pack Raiffeisen.CSV/Raiffeisen.CSV.csproj -c Release -o package /p:PackageVersion=${{ steps.gitversion.outputs.AssemblySemVer }}
+      run: dotnet pack Raiffeisen.CSV/Raiffeisen.CSV.csproj -c Release /p:PackageVersion=${{ steps.gitversion.outputs.AssemblySemVer }} -o package
 
     - name: Push generated package to GitHub registry
       run: dotnet nuget push ./package/*.nupkg  --source https://nuget.pkg.github.com/threenine/index.json   --api-key ${{ github.token }}
