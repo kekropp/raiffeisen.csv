@@ -59,13 +59,8 @@ public class RaiffeisenTransaction
     [Marker(Marker.Mandate)]
     [MarkerString("Mandate: ")]
     public string? Mandate { get; set; }
-    
-    [Marker(Marker.PaypalMandate)]
-    [MarkerString("PAYPAL Mandate: ")]
-    public string? PaypalMandate { get; set; }
-
     public double Amount { get; set; }
-    public string CurrencyCode { get; set; }
+    public string? CurrencyCode { get; set; }
 
     public static RaiffeisenTransaction FromFields(string[]? fields)
     {
@@ -131,8 +126,7 @@ internal enum Marker
     PaymentReference,
     CardSequenceNumber,
     ClientReference,
-    Mandate,
-    PaypalMandate
+    Mandate
 }
 
 #region Attributes
