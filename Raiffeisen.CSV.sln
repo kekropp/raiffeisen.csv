@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raiffeisen.CSV", "Raiffeisen.CSV\Raiffeisen.CSV.csproj", "{E1A60D9C-D6C8-4C5F-A019-2C0264335CB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raiffeisen.CSV.Test", "Raiffeisen.CSV.Test\Raiffeisen.CSV.Test.csproj", "{F7D623E4-DB43-43B9-A959-F3FF84B1D242}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1A60D9C-D6C8-4C5F-A019-2C0264335CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A60D9C-D6C8-4C5F-A019-2C0264335CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A60D9C-D6C8-4C5F-A019-2C0264335CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A60D9C-D6C8-4C5F-A019-2C0264335CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D623E4-DB43-43B9-A959-F3FF84B1D242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D623E4-DB43-43B9-A959-F3FF84B1D242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D623E4-DB43-43B9-A959-F3FF84B1D242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D623E4-DB43-43B9-A959-F3FF84B1D242}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
