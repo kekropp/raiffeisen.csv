@@ -1,12 +1,12 @@
 using System.Globalization;
 using System.Text;
-using Raiffeisen.CSV.Reader;
+using Raiffeisen.CSV.Parser;
 
 namespace Raiffeisen.CSV.Test;
 
 public class TestParser
 {
-    private ICsvParser _parser;
+    private ITransactionParser _parser;
 
     private static readonly string[] csvExample =
     {
@@ -20,7 +20,7 @@ public class TestParser
     [SetUp]
     public void Setup()
     {
-        _parser = new CsvParser();
+        _parser = new TransactionParser();
     }
 
     [Test]

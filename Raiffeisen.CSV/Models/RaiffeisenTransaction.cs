@@ -9,8 +9,7 @@ public class RaiffeisenTransaction
 {
     public DateTime ValueDate { get; set; }
     public DateTime TransactionDate { get; set; }
-
-
+    
     [Marker(Marker.Client)]
     [MarkerString("Client: ")]
     public string? Client { get; set; }

@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualBasic.FileIO;
 using Raiffeisen.CSV.Models;
 
-namespace Raiffeisen.CSV.Reader;
+namespace Raiffeisen.CSV.Parser;
 
-public class CsvParser : ICsvParser
+public class TransactionParser : ITransactionParser
 {
     public  IEnumerable<RaiffeisenTransaction> Parse(Stream data)
     {

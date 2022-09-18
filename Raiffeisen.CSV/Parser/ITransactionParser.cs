@@ -1,9 +1,9 @@
 ﻿
 using Raiffeisen.CSV.Models;
 
-namespace Raiffeisen.CSV.Reader;
+namespace Raiffeisen.CSV.Parser;
 
-public interface ICsvParser
+public interface ITransactionParser
 {
     public IEnumerable<RaiffeisenTransaction> Parse(Stream data);
 }
